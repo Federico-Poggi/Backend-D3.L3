@@ -2,13 +2,13 @@ package Es2.sim;
 
 public class Sim {
     /* ATTRIBUTI */
-    private double cellNumber;
+    private String cellNumber;
     private float credit;
     private String name;
     private String surname;
 
     CallList callList;
-    public Sim(String surname, String name, double cellNumber){
+    public Sim(String name, String surname, String cellNumber){
         this.name=name;
         this.surname= surname;
         this.cellNumber=cellNumber;
@@ -32,11 +32,9 @@ public class Sim {
         return surname;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
-    public double getCellNumber() {
+
+    public String getCellNumber() {
         return cellNumber;
     }
 }
