@@ -5,12 +5,6 @@ public class Rettangle {
     private long height,base,perimeter,area;
 
 
-
-    /* reading method */
-    public long getArea() {
-        return area;
-    }
-
     public long getBase() {
         return base;
     }
@@ -19,34 +13,22 @@ public class Rettangle {
         return height;
     }
 
-    public long getPerimeter() {
-        return perimeter;
+    /* metodi */
+    public long getPerimeter(){
+        this.perimeter= (this.base+this.height)*2;
+
+        return this.perimeter;
     }
 
-
-
-    /* metodi classe */
-    public long perimetro(long base, long altezza){
-        perimeter= (base+altezza)*2;
-
-        return perimeter;
+    public long getArea(){
+        this.area=(this.base*this.height);
+        return this.area;
     }
-
-
-    public long areaRet(long base, long altezza){
-        area=(base*altezza);
-        return area;
-    }
-
-
-
 
 
     public Rettangle(long base,long altezza){
         this.height=altezza;
         this.base=base;
-        this.perimeter=perimetro(base, altezza);
-        this.area=areaRet(base, altezza);
     }
 
 }

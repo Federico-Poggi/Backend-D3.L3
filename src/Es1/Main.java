@@ -31,11 +31,11 @@ public class Main {
             long resultArea = 0;
             long resultPerimeter = 0;
 
-            for (int j = 0; j < rettangoli.length; j++) {
-                long retArea = rettangoli[j].getArea();
-                long retPerimeter = rettangoli[j].getPerimeter();
+            for (Rettangle rettangle : rettangoli) {
+                long retArea = rettangle.getArea();
+                long retPerimeter = rettangle.getPerimeter();
                 resultArea = resultArea + retArea;
-                resultPerimeter=resultPerimeter+retPerimeter;
+                resultPerimeter = resultPerimeter + retPerimeter;
                 //System.out.println(resultArea);
             }
 
@@ -45,4 +45,6 @@ public class Main {
 
 
     }
+
+
 }

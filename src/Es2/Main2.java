@@ -21,8 +21,12 @@ public class Main2 {
             System.out.println("Nome:" + sim.getName()+"\n" + " Surname:" + sim.getSurname() + "\n" + " Numero Cellulare:" + sim.getCellNumber());
 
         }
+        CallList callList=new CallList();
+        callList.GetNumberCalled();
+        callList.GetDuration();
+        System.out.println(callList.toString());
 
-
+        }
 
     }
-}
+
